@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author   = { 'Erica Sadun' => '' }
   s.source   = { :git => 'https://github.com/mattbocosoft/ABContactHelper.git' }
   s.platform = :ios
-  s.source_files = 'ABContact.{h,m}', 'ABGroup.{h,m}', 'ABContactsHelper.{h,m}'
+  s.source_files = 'Code/*.{h,m}'
   s.frameworks = 'AddressBook', 'AddressBookUI'
   s.requires_arc = true
 end
