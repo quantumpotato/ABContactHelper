@@ -123,6 +123,7 @@
 + (BOOL) propertyIsMultiValue: (ABPropertyID) aProperty;
 + (NSArray *) arrayForProperty: (ABPropertyID) anID inRecord: (ABRecordRef) record;
 + (id) objectForProperty: (ABPropertyID) anID inRecord: (ABRecordRef) record;
++ (id) objectForMultiValueIdentifier:(ABMultiValueIdentifier)multiValueIdentifier forProperty: (ABPropertyID) anID inRecord: (ABRecordRef) record;
 
 // Creating proper dictionaries
 + (NSDictionary *) dictionaryWithValue: (id) value andLabel: (CFStringRef) label;

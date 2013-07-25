@@ -166,6 +166,22 @@
     return (__bridge_transfer id) ABRecordCopyValue(record, anID);
 }
 
++ (id) objectForMultiValueIdentifier:(ABMultiValueIdentifier)multiValueIdentifier forProperty: (ABPropertyID) anID inRecord: (ABRecordRef) record
+{
+    CFTypeRef theProperty = ABRecordCopyValue(record, anID);
+    if (!theProperty) return nil;
+    
+    NSArray *items = (__bridge_transfer NSArray *)ABMultiValueCopyArrayOfAllValues(theProperty);
+
+	CFIndex valueIndex = ABMultiValueGetIndexForIdentifier(theProperty, multiValueIdentifier);
+	CFRelease(theProperty);
+	return [items objectAtIndex:valueIndex];
+
+//	id object = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(theProperty, valueIndex);	
+//
+//	return object;
+}
+
 #pragma mark Record ID and Type
 
 - (ABRecordID) recordID {return ABRecordGetRecordID(record);}
