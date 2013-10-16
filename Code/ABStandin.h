@@ -14,4 +14,5 @@
 + (ABAddressBookRef) addressBook;
 + (ABAddressBookRef) currentAddressBook;
 + (BOOL) save: (NSError **) error;
++ (BOOL) hasAddressBookAccess:(ABAddressBookRef)addressBook;
 @end
