@@ -18,7 +18,10 @@ static ABAddressBookRef shared = NULL;
     @synchronized (self) {
         if (!shared) {
             if (ABAddressBookCreateWithOptions == NULL) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
                 shared = ABAddressBookCreate();
+#pragma clang diagnostic pop
             } else {
                 shared = ABAddressBookCreateWithOptions(NULL, NULL);
             }
