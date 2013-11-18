@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Objective-C Address Book wrapper.'
   s.homepage = 'https://github.com/erica/ABContactHelper'
   s.author   = { 'Erica Sadun' => '' }
-  s.source   = { :git => 'https://github.com/mattbocosoft/ABContactHelper.git' }
+  s.source   = { :git => 'https://github.com/shepting/ABContactHelper.git' }
   s.platform = :ios
   s.source_files = 'Code/*.{h,m}'
   s.frameworks = 'AddressBook', 'AddressBookUI'
