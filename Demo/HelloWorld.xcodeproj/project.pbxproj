@@ -11,6 +11,9 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		37EBD65E183ACBD400BCEC33 /* ABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD65B183ACBD300BCEC33 /* ABAppDelegate.m */; };
+		37EBD65F183ACBD400BCEC33 /* ABDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD65D183ACBD400BCEC33 /* ABDemoViewController.m */; };
+		57EAE8A9680D4BFA8C7D0279 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951A8E4E0D254FAFA5F58840 /* libPods.a */; };
 		84F4AD08171404C4005C1954 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F4AD07171404C4005C1954 /* Default-568h@2x.png */; };
 		8E3EA0DB13AB9B7800D6C49B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */; };
 		8E3EA0DD13AB9B9400D6C49B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */; };
@@ -19,13 +22,8 @@
 		8E3EA0E313AB9BB100D6C49B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E213AB9BB100D6C49B /* Default.png */; };
 		8E3EA0E513AB9BB700D6C49B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E413AB9BB700D6C49B /* icon@2x.png */; };
 		8E3EA0E713AB9BBC00D6C49B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E613AB9BBC00D6C49B /* icon.png */; };
-		8E7467AC1406E37600B1B2D7 /* ABContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7467A51406E37600B1B2D7 /* ABContact.m */; };
-		8E7467AD1406E37600B1B2D7 /* ABContactsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7467A71406E37600B1B2D7 /* ABContactsHelper.m */; };
-		8E7467AE1406E37600B1B2D7 /* ABGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7467A91406E37600B1B2D7 /* ABGroup.m */; };
-		8E7467AF1406E37600B1B2D7 /* ABStandin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7467AB1406E37600B1B2D7 /* ABStandin.m */; };
 		8E7467B11406E39C00B1B2D7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7467B01406E39C00B1B2D7 /* AddressBook.framework */; };
 		8E7467B31406E3A000B1B2D7 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7467B21406E3A000B1B2D7 /* AddressBookUI.framework */; };
-		8E7467BF1407E73900B1B2D7 /* ModalAlertDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7467BE1407E73900B1B2D7 /* ModalAlertDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +33,10 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HelloWorld_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld_Prefix.pch; sourceTree = "<group>"; };
+		37EBD65A183ACBD300BCEC33 /* ABAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAppDelegate.h; sourceTree = "<group>"; };
+		37EBD65B183ACBD300BCEC33 /* ABAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAppDelegate.m; sourceTree = "<group>"; };
+		37EBD65C183ACBD300BCEC33 /* ABDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDemoViewController.h; sourceTree = "<group>"; };
+		37EBD65D183ACBD400BCEC33 /* ABDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABDemoViewController.m; sourceTree = "<group>"; };
 		84F4AD07171404C4005C1954 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HelloWorld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
@@ -44,18 +46,10 @@
 		8E3EA0E213AB9BB100D6C49B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8E3EA0E413AB9BB700D6C49B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		8E3EA0E613AB9BBC00D6C49B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		8E7467A41406E37600B1B2D7 /* ABContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABContact.h; sourceTree = "<group>"; };
-		8E7467A51406E37600B1B2D7 /* ABContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABContact.m; sourceTree = "<group>"; };
-		8E7467A61406E37600B1B2D7 /* ABContactsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABContactsHelper.h; sourceTree = "<group>"; };
-		8E7467A71406E37600B1B2D7 /* ABContactsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABContactsHelper.m; sourceTree = "<group>"; };
-		8E7467A81406E37600B1B2D7 /* ABGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGroup.h; sourceTree = "<group>"; };
-		8E7467A91406E37600B1B2D7 /* ABGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGroup.m; sourceTree = "<group>"; };
-		8E7467AA1406E37600B1B2D7 /* ABStandin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStandin.h; sourceTree = "<group>"; };
-		8E7467AB1406E37600B1B2D7 /* ABStandin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStandin.m; sourceTree = "<group>"; };
 		8E7467B01406E39C00B1B2D7 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		8E7467B21406E3A000B1B2D7 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		8E7467BD1407E73900B1B2D7 /* ModalAlertDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalAlertDelegate.h; sourceTree = "<group>"; };
-		8E7467BE1407E73900B1B2D7 /* ModalAlertDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalAlertDelegate.m; sourceTree = "<group>"; };
+		951A8E4E0D254FAFA5F58840 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D912775AF7496A8D5F42F3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +62,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				57EAE8A9680D4BFA8C7D0279 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,13 +80,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				84F4AD07171404C4005C1954 /* Default-568h@2x.png */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-				8E7467A31406E36300B1B2D7 /* Address Book */,
-				8E7467C01407E73D00B1B2D7 /* Utility */,
+				37EBD65A183ACBD300BCEC33 /* ABAppDelegate.h */,
+				37EBD65B183ACBD300BCEC33 /* ABAppDelegate.m */,
+				37EBD65C183ACBD300BCEC33 /* ABDemoViewController.h */,
+				37EBD65D183ACBD400BCEC33 /* ABDemoViewController.m */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				C8D912775AF7496A8D5F42F3 /* Pods.xcconfig */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -99,6 +95,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84F4AD07171404C4005C1954 /* Default-568h@2x.png */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 				8E3EA0EB13AB9BEE00D6C49B /* Art */,
 				32CA4F630368D1EE00C91783 /* HelloWorld_Prefix.pch */,
 				8D1107310486CEB800E47090 /* HelloWorld-Info.plist */,
@@ -114,6 +112,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				951A8E4E0D254FAFA5F58840 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,30 +131,6 @@
 			name = Art;
 			sourceTree = "<group>";
 		};
-		8E7467A31406E36300B1B2D7 /* Address Book */ = {
-			isa = PBXGroup;
-			children = (
-				8E7467A41406E37600B1B2D7 /* ABContact.h */,
-				8E7467A51406E37600B1B2D7 /* ABContact.m */,
-				8E7467A61406E37600B1B2D7 /* ABContactsHelper.h */,
-				8E7467A71406E37600B1B2D7 /* ABContactsHelper.m */,
-				8E7467A81406E37600B1B2D7 /* ABGroup.h */,
-				8E7467A91406E37600B1B2D7 /* ABGroup.m */,
-				8E7467AA1406E37600B1B2D7 /* ABStandin.h */,
-				8E7467AB1406E37600B1B2D7 /* ABStandin.m */,
-			);
-			name = "Address Book";
-			sourceTree = "<group>";
-		};
-		8E7467C01407E73D00B1B2D7 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				8E7467BD1407E73900B1B2D7 /* ModalAlertDelegate.h */,
-				8E7467BE1407E73900B1B2D7 /* ModalAlertDelegate.m */,
-			);
-			name = Utility;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
+				0A170F1CBCE343B4B8C769C4 /* Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				CEA6ABF13DCE4ABA884B33FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,17 +198,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A170F1CBCE343B4B8C769C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA6ABF13DCE4ABA884B33FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EBD65E183ACBD400BCEC33 /* ABAppDelegate.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				8E7467AC1406E37600B1B2D7 /* ABContact.m in Sources */,
-				8E7467AD1406E37600B1B2D7 /* ABContactsHelper.m in Sources */,
-				8E7467AE1406E37600B1B2D7 /* ABGroup.m in Sources */,
-				8E7467AF1406E37600B1B2D7 /* ABStandin.m in Sources */,
-				8E7467BF1407E73900B1B2D7 /* ModalAlertDelegate.m in Sources */,
+				37EBD65F183ACBD400BCEC33 /* ABDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +247,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D912775AF7496A8D5F42F3 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;

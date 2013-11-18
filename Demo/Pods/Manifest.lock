@@ -1,0 +1,10 @@
+PODS:
+  - ABContactHelper (0.0.2)
+
+DEPENDENCIES:
+  - ABContactHelper
+
+SPEC CHECKSUMS:
+  ABContactHelper: 4c6148abb9e795d2162d73688ca22a313be792a0
+
+COCOAPODS: 0.27.1
