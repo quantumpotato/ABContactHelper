@@ -15,10 +15,6 @@
 #define CANCEL_INDEX 0
 
 @interface ABDemoViewController ()
-@property (nonatomic, strong) UIAlertView *removeAlert;
-@property (nonatomic, strong) UIAlertView *addAlert;
-@property (nonatomic, strong) ABContact *contactToRemove;
-@property (nonatomic, strong) ABContact *contactToAdd;
 
 @end
 
@@ -28,26 +24,34 @@
 {
     [super viewDidLoad];
     
-    self.contacts = [ABContactsHelper contacts];
-        
+    
     UIBarButtonItem *addBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(add)];
     self.navigationItem.rightBarButtonItem = addBarButton;
     
-    UIBarButtonItem *removeBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Remove" style:UIBarButtonItemStylePlain target:self action:@selector(remove)];
+    UIBarButtonItem *removeBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Remove" style:UIBarButtonItemStylePlain target:self action:@selector(removeSelectedContact)];
     self.navigationItem.leftBarButtonItem = removeBarButton;
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ContactCell"];
+}
+
+- (void)reload
+{
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.contacts count];
+    return [ABContactsHelper contactsCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    ABContact *contact = [ABContactsHelper contacts][indexPath.row];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ContactCell"];
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ABContactCell"];
-    cell.textLabel.text = [_contacts[indexPath.row] compositeName];
+    cell.textLabel.text = [contact compositeName];
+    
     return cell;
 }
 
@@ -58,63 +62,26 @@
 	if (person)
 	{
 		ABContact *contact = [ABContact contactWithRecord:person];
-		self.title = [NSString stringWithFormat:@"Added %@", contact.compositeName];
+        
         
         NSError *error;
 		BOOL success = [ABContactsHelper addContact:contact withError:&error];
-        if (!success)
-        {
+        if (!success) {
             NSLog(@"Could not add contact. %@", error.localizedFailureReason);
-            self.title = @"Error.";
 		}
         
+        NSLog(@"Added %@", [contact compositeName]);
         [ABStandin save:nil];
-	}
-	else
-		self.title = @"Cancelled";
+        
+        [self.tableView reloadData];
+	} else {
+        NSLog(@"Cancelled");
+    }
     
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
-#pragma mark PEOPLE PICKER DELEGATE METHODS
-- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person
-{
-	[self dismissModalViewControllerAnimated:YES];
-	ABContact *contact = [ABContact contactWithRecord:person];
-    self.contactToRemove = contact;
-    
-    NSString *query = [NSString stringWithFormat:@"Really delete %@?",  contact.compositeName];
-    
-    self.removeAlert = [[UIAlertView alloc] initWithTitle:query message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
-    [self.removeAlert show];
-    
-	return NO;
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (alertView == self.removeAlert) {
-        if (buttonIndex == OK_INDEX) {
-            self.title = @"Deleted Contact";
-            [self.contactToRemove removeSelfFromAddressBook:nil];
-            [ABStandin save:nil];
-        }
-    }
-}
-
-- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
-{
-	// required method that is never called in the people-only-picking
-	[self dismissModalViewControllerAnimated:YES];
-	return NO;
-}
-
-- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
-{
-    [self dismissModalViewControllerAnimated:YES];
-}
-
-- (void) add
+- (void)add
 {
 	// create a new view controller
 	ABNewPersonViewController *npvc = [[ABNewPersonViewController alloc] init];
@@ -129,11 +96,18 @@
 	[self.navigationController pushViewController:npvc animated:YES];
 }
 
-- (void)remove
+- (void)removeSelectedContact
 {
-	ABPeoplePickerNavigationController *ppnc = [[ABPeoplePickerNavigationController alloc] init];
-	ppnc.peoplePickerDelegate = self;
-	[self presentModalViewController:ppnc animated:YES];
+    NSUInteger row = [self.tableView indexPathForSelectedRow].row;
+    ABContact *contact = [ABContactsHelper contacts][row];
+    
+    NSError *error;
+    if (![contact removeSelfFromAddressBook:&error]) {
+        NSLog(@"%@", [error localizedDescription]);
+    };
+    [ABStandin save:nil];
+    
+    [self.tableView reloadData];
 }
 
 

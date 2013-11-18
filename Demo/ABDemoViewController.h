@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ABContactsHelper.h"
 
-@interface ABDemoViewController : UITableViewController <ABNewPersonViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate, UIAlertViewDelegate>
+@interface ABDemoViewController : UITableViewController <ABNewPersonViewControllerDelegate, UIAlertViewDelegate>
 
-@property (strong, nonatomic) NSArray *contacts;
 
 @end
