@@ -18,4 +18,6 @@ contact.lastName = @"Thompson";
 
 ### Demo App 
 
+Contains a demo app which shows listing, adding, and removing contacts from the device address book.
+
 ![Screenshot](https://raw.github.com/shepting/ABContactHelper/clearer_code_layout/Demo/Address-Book-Demo-App.png)
