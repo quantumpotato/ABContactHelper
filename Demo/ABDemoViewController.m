@@ -15,7 +15,7 @@
 #define CANCEL_INDEX 0
 
 @interface ABDemoViewController ()
-
+@property (nonatomic, assign) BOOL loaded;
 @end
 
 @implementation ABDemoViewController
@@ -32,17 +32,27 @@
     self.navigationItem.leftBarButtonItem = removeBarButton;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ContactCell"];
+    
+    self.title = @"Contacts";
 }
 
-- (void)reload
+- (void)viewDidAppear:(BOOL)animated
 {
+    self.loaded = YES;
+    
     [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [ABContactsHelper contactsCount];
+    if (self.loaded) {
+        // This causes a contact access request. If it happens too early (say, part
+        // of applicationDidFinishLaunchingWithOptions) the app locks that first run.
+        return [ABContactsHelper contactsCount];
+    } else {
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
