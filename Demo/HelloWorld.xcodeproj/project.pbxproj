@@ -11,17 +11,13 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		3785FF381892437D00086007 /* ABContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3785FF311892437D00086007 /* ABContact.m */; };
+		3785FF391892437D00086007 /* ABContactsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3785FF331892437D00086007 /* ABContactsHelper.m */; };
+		3785FF3A1892437D00086007 /* ABGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3785FF351892437D00086007 /* ABGroup.m */; };
+		3785FF3B1892437D00086007 /* ABStandin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3785FF371892437D00086007 /* ABStandin.m */; };
 		37EBD65E183ACBD400BCEC33 /* ABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD65B183ACBD300BCEC33 /* ABAppDelegate.m */; };
 		37EBD65F183ACBD400BCEC33 /* ABDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD65D183ACBD400BCEC33 /* ABDemoViewController.m */; };
-		57EAE8A9680D4BFA8C7D0279 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951A8E4E0D254FAFA5F58840 /* libPods.a */; };
 		84F4AD08171404C4005C1954 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F4AD07171404C4005C1954 /* Default-568h@2x.png */; };
-		8E3EA0DB13AB9B7800D6C49B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DA13AB9B7800D6C49B /* Default-Portrait~ipad.png */; };
-		8E3EA0DD13AB9B9400D6C49B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DC13AB9B9400D6C49B /* Default-Landscape~ipad.png */; };
-		8E3EA0DF13AB9BA500D6C49B /* icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0DE13AB9BA500D6C49B /* icon-iPad.png */; };
-		8E3EA0E113AB9BAC00D6C49B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E013AB9BAC00D6C49B /* Default@2x.png */; };
-		8E3EA0E313AB9BB100D6C49B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E213AB9BB100D6C49B /* Default.png */; };
-		8E3EA0E513AB9BB700D6C49B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E413AB9BB700D6C49B /* icon@2x.png */; };
-		8E3EA0E713AB9BBC00D6C49B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA0E613AB9BBC00D6C49B /* icon.png */; };
 		8E7467B11406E39C00B1B2D7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7467B01406E39C00B1B2D7 /* AddressBook.framework */; };
 		8E7467B31406E3A000B1B2D7 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7467B21406E3A000B1B2D7 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +29,14 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HelloWorld_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld_Prefix.pch; sourceTree = "<group>"; };
+		3785FF301892437D00086007 /* ABContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABContact.h; sourceTree = "<group>"; };
+		3785FF311892437D00086007 /* ABContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABContact.m; sourceTree = "<group>"; };
+		3785FF321892437D00086007 /* ABContactsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABContactsHelper.h; sourceTree = "<group>"; };
+		3785FF331892437D00086007 /* ABContactsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABContactsHelper.m; sourceTree = "<group>"; };
+		3785FF341892437D00086007 /* ABGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGroup.h; sourceTree = "<group>"; };
+		3785FF351892437D00086007 /* ABGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGroup.m; sourceTree = "<group>"; };
+		3785FF361892437D00086007 /* ABStandin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStandin.h; sourceTree = "<group>"; };
+		3785FF371892437D00086007 /* ABStandin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStandin.m; sourceTree = "<group>"; };
 		37EBD65A183ACBD300BCEC33 /* ABAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAppDelegate.h; sourceTree = "<group>"; };
 		37EBD65B183ACBD300BCEC33 /* ABAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAppDelegate.m; sourceTree = "<group>"; };
 		37EBD65C183ACBD300BCEC33 /* ABDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDemoViewController.h; sourceTree = "<group>"; };
@@ -48,7 +52,6 @@
 		8E3EA0E613AB9BBC00D6C49B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8E7467B01406E39C00B1B2D7 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		8E7467B21406E3A000B1B2D7 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		951A8E4E0D254FAFA5F58840 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D912775AF7496A8D5F42F3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +65,6 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				57EAE8A9680D4BFA8C7D0279 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				3785FF2F1892437D00086007 /* Code */,
 				37EBD65A183ACBD300BCEC33 /* ABAppDelegate.h */,
 				37EBD65B183ACBD300BCEC33 /* ABAppDelegate.m */,
 				37EBD65C183ACBD300BCEC33 /* ABDemoViewController.h */,
@@ -112,9 +115,24 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
-				951A8E4E0D254FAFA5F58840 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3785FF2F1892437D00086007 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				3785FF301892437D00086007 /* ABContact.h */,
+				3785FF311892437D00086007 /* ABContact.m */,
+				3785FF321892437D00086007 /* ABContactsHelper.h */,
+				3785FF331892437D00086007 /* ABContactsHelper.m */,
+				3785FF341892437D00086007 /* ABGroup.h */,
+				3785FF351892437D00086007 /* ABGroup.m */,
+				3785FF361892437D00086007 /* ABStandin.h */,
+				3785FF371892437D00086007 /* ABStandin.m */,
+			);
+			name = Code;
+			path = ../Code;
 			sourceTree = "<group>";
 		};
 		8E3EA0EB13AB9BEE00D6C49B /* Art */ = {
@@ -138,11 +156,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
-				0A170F1CBCE343B4B8C769C4 /* Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				CEA6ABF13DCE4ABA884B33FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,59 +201,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E3EA0DB13AB9B7800D6C49B /* Default-Portrait~ipad.png in Resources */,
-				8E3EA0DD13AB9B9400D6C49B /* Default-Landscape~ipad.png in Resources */,
-				8E3EA0DF13AB9BA500D6C49B /* icon-iPad.png in Resources */,
-				8E3EA0E113AB9BAC00D6C49B /* Default@2x.png in Resources */,
-				8E3EA0E313AB9BB100D6C49B /* Default.png in Resources */,
-				8E3EA0E513AB9BB700D6C49B /* icon@2x.png in Resources */,
-				8E3EA0E713AB9BBC00D6C49B /* icon.png in Resources */,
 				84F4AD08171404C4005C1954 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0A170F1CBCE343B4B8C769C4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CEA6ABF13DCE4ABA884B33FB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3785FF3B1892437D00086007 /* ABStandin.m in Sources */,
 				37EBD65E183ACBD400BCEC33 /* ABAppDelegate.m in Sources */,
+				3785FF381892437D00086007 /* ABContact.m in Sources */,
+				3785FF391892437D00086007 /* ABContactsHelper.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				3785FF3A1892437D00086007 /* ABGroup.m in Sources */,
 				37EBD65F183ACBD400BCEC33 /* ABDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
