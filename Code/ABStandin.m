@@ -86,4 +86,9 @@ static ABAddressBookRef shared = NULL;
     
     return accessGranted;
 }
+
++ (BOOL)hasAddressBookAccess {
+    return [self hasAddressBookAccess:[self currentAddressBook]];
+}
+
 @end
