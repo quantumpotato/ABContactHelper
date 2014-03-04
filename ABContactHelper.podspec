@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'ABContactHelper'
-  s.version  = '0.1'
+  s.version  = '0.2'
   s.license  = 'BSD'
   s.summary  = 'Objective-C Address Book wrapper.'
   s.homepage = 'https://github.com/erica/ABContactHelper'
