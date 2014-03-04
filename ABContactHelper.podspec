@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version  = '0.2'
   s.license  = 'BSD'
   s.summary  = 'Objective-C Address Book wrapper.'
-  s.homepage = 'https://github.com/erica/ABContactHelper'
+  s.homepage = 'https://github.com/shepting/ABContactHelper'
   s.author   = { 'Erica Sadun' => '' }
   s.source   = { :git => 'https://github.com/shepting/ABContactHelper.git', :tag => s.version.to_s }
   s.platform = :ios
