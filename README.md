@@ -1,6 +1,8 @@
 ABContactHelper
 ===============
 
+Feel free to submit pull requests to improve in any way.
+
 Objective-C Address Book wrapper. Provides functionality to create/update/delete contacts from the device address book.
 
 ```objective-c
