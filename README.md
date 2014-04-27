@@ -8,17 +8,17 @@ Objective-C Address Book wrapper. Provides functionality to create/update/delete
 ```objective-c
 #import "ABContactsHelper.h"
 
-    ABContact *newContact = [[ABContact alloc] init];
-    newContact.firstname = @"Jim";
-    newContact.lastname = @"Thompson";
-    newContact.image = [UIImage imageNamed:@"thompson.png"];
-    [newContact addEmailItem:@"j.thompson@company.com" withLabel:kABWorkLabel];
-    [newContact addPhoneItem:@"1(415)123-5555" withLabel:kABPersonPhoneMobileLabel];
+ABContact *newContact = [[ABContact alloc] init];
+newContact.firstname = @"Jim";
+newContact.lastname = @"Thompson";
+newContact.image = [UIImage imageNamed:@"thompson.png"];
+[newContact addEmailItem:@"j.thompson@company.com" withLabel:kABWorkLabel];
+[newContact addPhoneItem:@"1(415)123-5555" withLabel:kABPersonPhoneMobileLabel];
 
-    NSError *error;
-    if (![ABStandin save:&error]) {
-        NSLog(@"Error: %@", [error localizedDescription]);
-    }
+NSError *error;
+if (![ABStandin save:&error]) {
+    NSLog(@"Error: %@", [error localizedDescription]);
+}
 
 ```
 
