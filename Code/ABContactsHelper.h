@@ -24,10 +24,10 @@
 + (NSArray *) groups; // groups
 
 // Counting
-+ (int) contactsCount;
-+ (int) contactsWithImageCount;
-+ (int) contactsWithoutImageCount;
-+ (int) numberOfGroups;
++ (CFIndex) contactsCount;
++ (CFIndex) contactsWithImageCount;
++ (CFIndex) contactsWithoutImageCount;
++ (CFIndex) numberOfGroups;
 
 // Sorting
 + (BOOL) firstNameSorting;

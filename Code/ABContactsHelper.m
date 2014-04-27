@@ -40,17 +40,17 @@
     return array;
 }
 
-+ (int) contactsCount
++ (CFIndex) contactsCount
 {
     ABAddressBookRef addressBook = [ABStandin addressBook];
     return ABAddressBookGetPersonCount(addressBook);
 }
 
-+ (int) contactsWithImageCount
++ (CFIndex) contactsWithImageCount
 {
     ABAddressBookRef addressBook = [ABStandin addressBook];
     NSArray *thePeople = (__bridge_transfer NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBook);
-    int ncount = 0;
+    CFIndex ncount = 0;
     for (id person in thePeople) 
     {
         ABRecordRef abPerson = (__bridge ABRecordRef) person;
@@ -59,11 +59,11 @@
     return ncount;
 }
 
-+ (int) contactsWithoutImageCount
++ (CFIndex) contactsWithoutImageCount
 {
     ABAddressBookRef addressBook = [ABStandin addressBook];
     NSArray *thePeople = (__bridge_transfer NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBook);
-    int ncount = 0;
+    CFIndex ncount = 0;
     for (id person in thePeople) 
     {
         ABRecordRef abPerson = (__bridge ABRecordRef) person;
@@ -73,12 +73,11 @@
 }
 
 // Groups
-+ (int) numberOfGroups
++ (CFIndex) numberOfGroups
 {
     ABAddressBookRef addressBook = [ABStandin addressBook];
     NSArray *groups = (__bridge_transfer NSArray *)ABAddressBookCopyArrayOfAllGroups(addressBook);
-    int ncount = groups.count;
-    return ncount;
+    return groups.count;
 }
 
 + (NSArray *) groups
