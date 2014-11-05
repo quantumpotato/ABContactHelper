@@ -501,7 +501,7 @@
     
     CFIndex num = MIN(valueArray.count, labelArray.count);
     NSMutableArray *items = [NSMutableArray array];
-    for (int i = 0; i < num; i++)
+    for (NSInteger i = 0; i < num; i++)
     {
         NSMutableDictionary *md = [NSMutableDictionary dictionary];
         [md setObject:[valueArray objectAtIndex:i] forKey:@"value"];
